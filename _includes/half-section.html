@@ -1,9 +1,9 @@
 <section class="grid sm:grid-cols-2 sm:min-h-70">
-    <div class="px-10p py-20 self-end">
+    <div class="px-10p py-20 self-end max-w-xl">
         <!-- alternative: flex flex-col justify-end -->
-        <h2> {{page.half-section.heading}} </h2> 
+        <h2 class="mb-6"> {{page.half-section.heading}} </h2> 
         <p>{{page.half-section.description}}</p>
-        <a class="button" href={{page.half-section.button_url}}"> Sign up </a>
+        <a class="button mt-6" href={{page.half-section.button_url}}"> Sign up </a>
     </div>
     <div class="bg-image min-h-50" 
         style="background-position: {{page.half-section.image_focus | default:'center'}}; 

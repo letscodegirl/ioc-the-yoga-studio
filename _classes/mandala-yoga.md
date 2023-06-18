@@ -1,7 +1,7 @@
 ---
 layout: class
 title: Mandala Yoga
-description: This is a short description of the first blog post
+description: Magna in laboris ad proident cupidatat exercitation excepteur exercitation aliqua labore consectetur.
 featured_image: '/uploads/yoga-studio8.jpg'
 seo: 
   title: This should appear in the browser tab

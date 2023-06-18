@@ -1,10 +1,13 @@
-<section>
+<section class="p-10p">
     <h2>{{page.testimonial_section.heading}}</h2>
-    <ul>
+    <ul class="grid sm:grid-cols-3 gap-6">
        {% for testimonial in page.testimonial_section.testimonials %} 
-       <li>
-         <img src="{{testimonial.image}}" alt="{{testimonial.name}}">
-         <h3>{{testimonial.name}}</h3>
+       <li class="max-w-xs sm:max-w-none">
+        <div class="bg-image aspect-square border border-pumpkin mb-6" style="background-image: url({{testimonial.image}});">
+        </div>
+         <!-- <img src="{{testimonial.image}}" class="aspect-square object-cover border border-pumpkin mb-8" alt="{{testimonial.name}}"> -->
+      
+         <h3 class="border-b border-pumpkin pb-5">{{testimonial.name}}</h3>
          <p>{{testimonial.description}}</p>
        </li>
        {% endfor %}
