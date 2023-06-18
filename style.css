@@ -55,3 +55,66 @@
         @apply bg-cover bg-center bg-no-repeat;
     }
 }
+
+/* momence schedule */
+/* Background  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule {
+    @apply bg-cream;
+}
+
+/* Background  */
+#momence-embed #momence-plugin-host-schedule * {
+    @apply bg-cream text-pumpkin rounded-none border-pumpkin;
+}
+
+/* Styling the headings  */
+#momence-embed #momence-plugin-host-schedule h4 {
+    @apply text-pumpkin font-serif;
+}
+
+/* Hide the class type text above the class title */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+    display: none;
+}
+
+/* Hide featured image */
+#momence-embed #momence-plugin-host-schedule .jDJBAl {
+    display: none;
+}
+
+/* Teacher Name & Bio */
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+    display: none;
+}
+
+/* Style the featured button  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+    @apply inline-block px-6 py-2 uppercase tracking-wide bg-pumpkin text-cream rounded-none whitespace-nowrap;
+}
+
+/* Remove the border from the arrows left and right at the top  */
+#momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+    @apply border-none;
+}
+
+/* Add more space below the first row  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-first_row {
+    @apply pb-4;
+}
+
+
+/* Add more space below the first row  */
+#momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
+    @apply text-2xl font-serif pointer-events-none;
+}
+
+/* Hide powered by momence */
+
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+    display: none;
+}
+
+/* Styling the lines under the list of pages */
+#momence-embed #momence-plugin-host-schedule .gZOyVg::after {
+    @apply bg-pumpkin;
+}
