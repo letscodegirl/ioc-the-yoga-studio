@@ -464,6 +464,9 @@ p {
 .p-8 {
   padding: 2rem;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 
 
 /* ----------- Default Styles to apply to the whole project  --------- */
