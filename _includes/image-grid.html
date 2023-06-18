@@ -1,0 +1,13 @@
+<section>
+    <div style="background-image: url('https://placekitten.com/900/600');">
+        <h2> {{page.image-grid.heading}} </h2> 
+        <p>{{[page.image-grid.description]}}</p>
+        <a href={{page.image-grid.button_url}}"> {{page.image-grid.button_text}} </a>
+    </div>
+   <div>
+    {% for class in site.classes %}
+    <h3>{{class.title}}</h3>
+    <p>{{class.description}}</p>
+   </div>
+   {% endfor %}
+</section>
