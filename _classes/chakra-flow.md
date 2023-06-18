@@ -2,7 +2,7 @@
 layout: class
 title: Chakra Flow
 description: Magna in laboris ad proident cupidatat exercitation excepteur exercitation aliqua labore consectetur.
-featured_image: '/uploads/yoga-7.jpg'
+featured_image: '/uploads/yoga-studio7.jpg'
 seo: 
   title: This should appear in the browser tab
   description: 

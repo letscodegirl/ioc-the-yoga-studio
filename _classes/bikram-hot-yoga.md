@@ -2,7 +2,7 @@
 layout: class
 title: Bikram Hot Yoga
 description: Magna in laboris ad proident cupidatat exercitation excepteur exercitation aliqua labore consectetur.
-featured_image: 'https://placekitten.com/900/600'
+featured_image: '/uploads/yoga-studio8.jpg'
 seo: 
   title: This should appear in the browser tab
   description: 

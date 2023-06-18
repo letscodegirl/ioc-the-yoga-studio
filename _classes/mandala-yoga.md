@@ -2,7 +2,7 @@
 layout: class
 title: Mandala Yoga
 description: Magna in laboris ad proident cupidatat exercitation excepteur exercitation aliqua labore consectetur.
-featured_image: '/uploads/yoga-studio8.jpg'
+featured_image: '/uploads/yoga-studio3.jpg'
 seo: 
   title: This should appear in the browser tab
   description: 
