@@ -1,0 +1,12 @@
+<section>
+    <h2>{{page.testimonial_section.heading}}</h2>
+    <ul>
+       {% for testimonial in page.testimonial_section.testimonials %} 
+       <li>
+         <img src="{{testimonial.image}}" alt="{{testimonial.name}}">
+         <h3>{{testimonial.name}}</h3>
+         <p>{{testimonial.description}}</p>
+       </li>
+       {% endfor %}
+    </ul>
+</section>
