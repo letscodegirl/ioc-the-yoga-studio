@@ -1,8 +1,11 @@
-<section>
-    <div>
+<section class="grid sm:grid-cols-2 sm:min-h-70">
+    <div class="px-10p py-20 self-end">
+        <!-- alternative: flex flex-col justify-end -->
         <h2> {{page.half-section.heading}} </h2> 
-        <p>{{[page.half-section.description]}}</p>
-        <a href={{page.half-section.button_url}}"> Sign up </a>
+        <p>{{page.half-section.description}}</p>
+        <a class="button" href={{page.half-section.button_url}}"> Sign up </a>
     </div>
-    <div style="background-image: url('https://placekitten.com/900/600');"></div>
+    <div class="bg-image min-h-50" 
+        style="background-position: {{page.half-section.image_focus | default:'center'}}; 
+        background-image: url('{{page.half-section.image}}');"></div>
 </section>

@@ -7,16 +7,19 @@
 /* ----------- Default Styles to apply to the whole project  --------- */
 
 @layer base {
+    body {
+        @apply text-pumpkin bg-cream;
+    }
 
     h1, h2, h3, h4  {
         @apply font-serif mb-[0.5em];
     }
 
     h1 {
-        @apply text-3xl leading-tight;
+        @apply text-7xl lg:text-8xl leading-tight;
     }
     h2 {
-        @apply text-2xl leading-tight;
+        @apply text-2xl lg:text-5xl leading-tight;
     }
     h3 {
         @apply text-xl leading-tight;
@@ -45,7 +48,13 @@
     }
 
     .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+        @apply inline-block px-4 py-2 uppercase tracking-widest bg-pumpkin text-white;
     }
     
+}
+
+@layer utilities {
+    .bg-image {
+        @apply bg-cover bg-center bg-no-repeat;
+    }
 }

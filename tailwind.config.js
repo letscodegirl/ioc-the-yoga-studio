@@ -16,6 +16,9 @@ module.exports = {
         pumpkin: "#C97324",
         cream: "#FBF2E9",
       },
+      letterSpacing: {
+        "superwide": "0.2em",
+      },
       spacing: {
         '5p': '5%',
         '10p': '10%',

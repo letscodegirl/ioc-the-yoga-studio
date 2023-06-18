@@ -310,19 +310,36 @@ video {
 [hidden] {
   display: none;
 }
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
 h1, h2, h3, h4 {
   margin-bottom: 0.5em;
   font-family: Oranienbaum, serif;
 }
 h1 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 4.5rem;
   line-height: 1.25;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 1;
+  }
 }
 h2 {
   font-size: 1.5rem;
   line-height: 2rem;
   line-height: 1.25;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 h3 {
   font-size: 1.125rem;
@@ -439,15 +456,89 @@ p {
 .button {
   display: inline-block;
   --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.1em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+.z-10 {
+  z-index: 10;
+}
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.-ml-10p {
+  margin-left: -10%;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mr-6 {
+  margin-right: 1.5rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.min-h-50 {
+  min-height: 50vh;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-1\/3 {
+  width: 33.333333%;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.self-end {
+  align-self: flex-end;
+}
+.border-pumpkin {
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
 }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
@@ -457,16 +548,58 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
-.bg-pumpkin {
-  --tw-bg-opacity: 1;
-  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+.bg-cover {
+  background-size: cover;
+}
+.p-5p {
+  padding: 5%;
 }
 .p-8 {
   padding: 2rem;
 }
-.text-cream {
-  --tw-text-opacity: 1;
-  color: rgb(251 242 233 / var(--tw-text-opacity));
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.text-right {
+  text-align: right;
+}
+.font-serif {
+  font-family: Oranienbaum, serif;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.tracking-superwide {
+  letter-spacing: 0.2em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -474,3 +607,29 @@ p {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+
+@media (min-width: 640px) {
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+  .sm\:block {
+    display: block;
+  }
+  .sm\:flex {
+    display: flex;
+  }
+  .sm\:min-h-70 {
+    min-height: 70vh;
+  }
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sm\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+  .sm\:text-left {
+    text-align: left;
+  }
+}
