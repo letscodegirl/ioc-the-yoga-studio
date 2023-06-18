@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% include head.html %}
+    
+</head>
+
+<body>
+    
+    <header> This is your header </header> 
+
+    {{content}}
+
+	<footer> This is your footer </footer> 
+
+</body>
+
+</html>
+
+<!------------ Technical Metadata  --------------------------------->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+<!------------ SEO Metadata  --------------------------------->
+<title> {{page.seo.title }} </title> 
+<meta name="description" content="{{page.seo.description }}">
+<meta name="keywords" content="{{page.seo.keywords }}">
+
+{% if page.seo.hide-from-google == true %}
+    <meta name="robots" content="noindex, nofollow">
+{% else %}
+     <meta name="robots" content="index, follow">
+{% endif %}
+
+<!------------  Social media sharing META Tags ------------>
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.seo.description }}"> 
+<meta property="og:image" content="{{ page.seo.social_image }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+<!------------ Google Fonts  ------------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+
+<!------------ Tailwind Stylesheet  ------------>
+<link rel="stylesheet" type="text/css" href="/assets/css/tailwind-styles.css">
+
+<!------------ CloudCannon Editor Stylesheet   ------------>
+<link rel="stylesheet" type="text/css" href="/editor.css" />
