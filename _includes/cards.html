@@ -1,0 +1,11 @@
+<section>
+
+    {% for class in site.classes %}
+    <div>
+        <h3>{{class.title}}</h3>
+        <p>{{class.description}}</p>
+        <a href="/schedule">Sign Up</a>
+    </div>
+    {% endfor %}
+
+</section>
