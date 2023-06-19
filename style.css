@@ -45,7 +45,14 @@
     }
 
     .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-widest bg-pumpkin text-white;
+        @apply inline-block px-6 py-2 uppercase tracking-widest bg-pumpkin text-white transition hover:text-pumpkin hover:bg-cream hover:border-pumpkin border border-transparent;
+    }
+    .form-field {
+        @apply outline-none py-1 placeholder:text-pumpkin placeholder:uppercase placeholder:tracking-widest text-pumpkin bg-transparent border-b border-b-pumpkin
+    }
+
+    .form-label {
+        @apply py-1 placeholder:text-pumpkin uppercase tracking-widest;
     }
     
 }

@@ -1,14 +1,16 @@
-<section>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name">
+<section class="px-5p py-12">
+    <form class="grid gap-8 max-w-2xl mx-auto">
+        <input class="form-field" type="text" id="name" name="name" placeholder="Name" aria-level="Name">
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email">
+        <input placeholder="Email" aria-label="Email" class="form-field" type="email" id="email" name="email">
 
-      <label for="message">Message</label>
-      <textarea id="message" id="message" name="message">
+        <div>
+        <label class="form-label block" for="message">Message</label>
+        <textarea rows="8" id="message" name="message" class="w-full bg-transparent p-4 outline-none border border-pumpkin"></textarea>
+        </div>
 
-      <button type="submit">Send</button>
+        <div class="text-right">
+            <button class="button" type="submit">Send</button>
+        </div>
     </form>
 </section>
