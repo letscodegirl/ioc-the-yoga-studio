@@ -1,17 +1,19 @@
-<section class="grid sm:grid-cols-2 sm:min-h-70">
+<section class="grid sm:grid-cols-2 sm:min-h-70 bg-pumpkin gap-[1px] px-[1px] pb-[1px]">
+  <div class="bg-cream">
     <div style="
         background-image: url('{{page.image-grid.image}}');
         background-position: {{page.half-section.image_focus | default:'center'}};
-        " class="grid items-end bg-image text-white px-10p py-20 ">
+        " class="grid items-end bg-image scroll-in-from-bottom-with-fade  text-white px-10p py-20 min-h-full">
         <div class="max-w-md">
           <h2 class="mb-6"> {{page.image-grid.heading}} </h2> 
           <p> {{page.image-grid.description}} </p>
           <a class="button mt-6" href={{page.image-grid.button_url}}"> {{page.image-grid.button_text}} </a>
         </div>
+      </div>
     </div>
-   <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 divide-x divide-y divide-pumpkin overflow-clip border border-pumpkin">
+   <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 divide-x divide-y divide-pumpkin overflow-clip">
     {% for class in site.classes %}
-   <div class="p-8 flex flex-col justify-end -m-px">
+   <div class="p-8 flex flex-col justify-end -m-px bg-cream">
     <h3>{{class.title}}</h3>
     <p>{{class.description}}</p>
    </div>

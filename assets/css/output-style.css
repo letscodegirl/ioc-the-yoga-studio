@@ -459,6 +459,34 @@ p {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 .button {
   display: inline-block;
   border-width: 1px;
@@ -541,26 +569,11 @@ p {
 .right-12 {
   right: 3rem;
 }
-.right-5p {
-  right: 5%;
-}
-.top-5p {
-  top: 5%;
-}
 .right-6 {
   right: 1.5rem;
 }
-.right-0 {
-  right: 0px;
-}
-.top-\[\] {
-  top: ;
-}
 .top-\[5vh\] {
   top: 5vh;
-}
-.right-4 {
-  right: 1rem;
 }
 .z-10 {
   z-index: 10;
@@ -609,9 +622,6 @@ p {
 .mt-6 {
   margin-top: 1.5rem;
 }
-.mb-0 {
-  margin-bottom: 0px;
-}
 .block {
   display: block;
 }
@@ -624,14 +634,11 @@ p {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
-.h-12 {
-  height: 3rem;
-}
-.h-full {
-  height: 100%;
-}
 .h-0 {
   height: 0px;
+}
+.h-12 {
+  height: 3rem;
 }
 .min-h-50 {
   min-height: 50vh;
@@ -639,23 +646,26 @@ p {
 .min-h-70 {
   min-height: 70vh;
 }
+.min-h-full {
+  min-height: 100%;
+}
 .min-h-screen {
   min-height: 100vh;
 }
+.w-0 {
+  width: 0px;
+}
 .w-1\/3 {
   width: 33.333333%;
+}
+.w-12 {
+  width: 3rem;
 }
 .w-\[33vw\] {
   width: 33vw;
 }
 .w-full {
   width: 100%;
-}
-.w-0 {
-  width: 0px;
-}
-.w-12 {
-  width: 3rem;
 }
 .w-min {
   width: -moz-min-content;
@@ -715,6 +725,9 @@ p {
 .gap-8 {
   gap: 2rem;
 }
+.gap-\[1px\] {
+  gap: 1px;
+}
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -746,14 +759,11 @@ p {
 .overflow-clip {
   overflow: clip;
 }
-.rounded-full {
-  border-radius: 9999px;
-}
-.rounded {
-  border-radius: 0.25rem;
-}
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+.rounded-full {
+  border-radius: 9999px;
 }
 .rounded-l-3xl {
   border-top-left-radius: 1.5rem;
@@ -776,6 +786,10 @@ p {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.bg-cream {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
 .bg-pumpkin {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
@@ -797,9 +811,6 @@ p {
 }
 .bg-white\/20 {
   background-color: rgb(255 255 255 / 0.2);
-}
-.bg-opacity-100 {
-  --tw-bg-opacity: 1;
 }
 .bg-cover {
   background-size: cover;
@@ -829,6 +840,9 @@ p {
 .p-8 {
   padding: 2rem;
 }
+.p-\[1px\] {
+  padding: 1px;
+}
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
@@ -840,6 +854,10 @@ p {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-\[1px\] {
+  padding-left: 1px;
+  padding-right: 1px;
 }
 .py-12 {
   padding-top: 3rem;
@@ -857,12 +875,11 @@ p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+.pb-\[1px\] {
+  padding-bottom: 1px;
 }
 .pt-3 {
   padding-top: 0.75rem;
@@ -884,10 +901,6 @@ p {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
 .uppercase {
   text-transform: uppercase;
 }
@@ -897,6 +910,10 @@ p {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
 .text-pumpkin {
   --tw-text-opacity: 1;
   color: rgb(201 115 36 / var(--tw-text-opacity));
@@ -905,18 +922,8 @@ p {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
 .opacity-0 {
   opacity: 0;
-}
-.opacity-10 {
-  opacity: 0.1;
-}
-.opacity-100 {
-  opacity: 1;
 }
 .outline-none {
   outline: 2px solid transparent;
@@ -1070,11 +1077,14 @@ p {
   .md\:ml-auto {
     margin-left: auto;
   }
+  .md\:line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
   .md\:flex {
     display: flex;
-  }
-  .md\:hidden {
-    display: none;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
